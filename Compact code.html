@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<body>
+<input id="alas" type="number" placeholder="Alas">
+<input id="tinggi" type="number" placeholder="tinggi">
+<hr>
+<input id="hipotenusa" type="number" placeholder="hipotenusa" disabled>
+<script>
+Var a = document.getElementById("alas");
+Var t = document.getElementById("tinggi");
+Var h = document.getElementById("hipotenusa);
+
+function calculate(){
+Let alas = Math.pow(a.value, 2);
+Let tinggi = Math pow(t.value, 2);
+h.value = Math.sqrt((alas + tinggi))
+}
+
+a.oninput = calculate;
+t.oninput = calculate;
+
+</body>
+</html>
